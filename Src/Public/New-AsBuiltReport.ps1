@@ -268,9 +268,9 @@ function New-AsBuiltReport {
 
         # If Timestamp parameter is specified, add the timestamp to the report filename 
         if ($Timestamp) {
-            $FileName = $ReportConfig.Report.Name + " - " + (Get-Date -Format 'yyyy-MM-dd_HH.mm.ss')
+            $FileName = $ReportConfig.Report.Name + " $Target" + " - " + (Get-Date -Format 'yyyy-MM-dd_HH.mm.ss')
         } else {
-            $FileName = $ReportConfig.Report.Name
+            $FileName = $ReportConfig.Report.Name + " $Target"
         }
 
         # If the EnableHealthCheck parameter has been specified, set the global healthcheck variable so report scripts can reference the health checks

@@ -1,5 +1,8 @@
 # AsBuiltReport.Core Changelog
 
+## Changed Report Save Name
+- Changed the report save name to include Target name.
+
 ## [1.0.4] - 2020-04-01
 ### Added
 - Added support for using the -Verbose switch with New-AsBuiltReport as per (Fix #28)
